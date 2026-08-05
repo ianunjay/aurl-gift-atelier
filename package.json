@@ -1,0 +1,12 @@
+{
+  "name": "aurl-gift-atelier",
+  "version": "1.0.0",
+  "description": "A single-file gift storefront built from 1,200 curated ideas.",
+  "scripts": {
+    "build:data": "cd builder && python build_data.py",
+    "build:site": "cd builder && python build_store.py",
+    "build": "npm run build:data && npm run build:site",
+    "test": "node tests/dom-harness.js"
+  },
+  "license": "MIT"
+}
