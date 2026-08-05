@@ -4,7 +4,7 @@ A single HTML file that turns 1,200 curated gift ideas into a browsable store. O
 
 ## The problem I was solving
 
-Most "gift ideas" lists are useless. They're generic (mug, wallet, perfume), they lump everyone into "for him / for her," and they stop at the idea. You still have to go figure out where to buy it, whether it suits a 9-year-old or a 60-year-old, and what to check before you spend.
+Most "gift ideas" lists are useless. They're generic (mug, wallet, watch), they lump everyone into "for him / for her," and they stop at the idea. You still have to go figure out where to buy it, whether it suits a 9-year-old or a 60-year-old, and what to check before you spend.
 
 I wanted the opposite: a set of specific, non-obvious ideas, sorted by who they're actually for, where each idea opens into a real page that tells you why it lands, when to give it, what to watch for, and where to buy it in India.
 
