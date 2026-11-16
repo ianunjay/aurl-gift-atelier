@@ -201,8 +201,11 @@ let TOAST_T;
 function toast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(TOAST_T);TOAST_T=setTimeout(()=>t.classList.remove('show'),1900);}
 
 /* ---------- imagery ---------- */
-function imgKw(it){return it.kw.split(/\s+/).slice(0,2).join(',')||'gift';}
-function liveImg(it,i){return 'https://loremflickr.com/600/450/'+encodeURIComponent(imgKw(it))+'?lock='+(it.id*9+i);}
+function cleanName(name) {
+  let c = name.replace(/[^a-zA-Z0-9]/g, '_');
+  return c.replace(/_+/g, '_').replace(/^_|_$/g, '');
+}
+function liveImg(it,i){return 'dist/images/'+cleanName(it.name)+'.jpg';}
 const FBCACHE={};
 function hue(s){let h=0;for(let i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))%360;return h;}
 function glyph(theme){const t=theme.toLowerCase();const m=[
